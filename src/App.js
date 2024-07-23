@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { AppBar, Toolbar, IconButton, Typography, Drawer, List, ListItem, ListItemText, CssBaseline, Box, Container } from '@mui/material';
+import AppBarra from './Component/AppBarra';
+import Navegador from './Component/Navegador';
+import Principal from './Component/Principal';
 
-function App() {
+const drawerWidth = 240;
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{ display: 'flex' }}>
+      <CssBaseline />
+      
+      {/* AppBarra */}
+      <AppBarra />
+      {/* Navegador */}  
+      <Navegador />
+      {/* Principal */}
+      <Principal drawerWidth={drawerWidth}/>       
+
+    </Box>
   );
-}
+};
 
 export default App;
