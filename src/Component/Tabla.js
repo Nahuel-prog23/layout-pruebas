@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button, TextField } from '@mui/material';
 
 const initialData = [
-  { id: 1, name: 'Elemento 1', value: 'Valor 1' },
-  { id: 2, name: 'Elemento 2', value: 'Valor 2' },
-  { id: 2, name: 'Elemento 2', value: 'Valor 2' }
+  { id: 1, name: 'Edinson Cavani', value: '9' },
+  { id: 2, name: 'Miguel Merentiel', value: '8' },
+  { id: 2, name: 'Luca Langoni', value: '7' }
   // Agrega más datos según sea necesario
 ];
 
@@ -42,7 +42,7 @@ const Tabla = () => {
             <TableRow>
               <TableCell>ID</TableCell>
               <TableCell>Nombre</TableCell>
-              <TableCell>Valor</TableCell>
+              <TableCell>Goles</TableCell>
               <TableCell>Acciones</TableCell>
             </TableRow>
           </TableHead>
